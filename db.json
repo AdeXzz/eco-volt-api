@@ -1,28 +1,120 @@
 {
-  "ElectricProduct": [
-    { "id": 1, "name": "Smart Meter X100", "brand": "VoltTech", "description": "Medidor inteligente de alta precisión para hogares y oficinas." },
-    { "id": 2, "name": "EcoSwitch Pro", "brand": "GreenSpark", "description": "Interruptor inteligente con control remoto desde app." },
-    { "id": 3, "name": "PowerGuard 360", "brand": "EnerSave", "description": "Protector eléctrico con sistema de apagado automático por sobrecarga." },
-    { "id": 4, "name": "VoltControl V2", "brand": "VoltTech", "description": "Regulador de voltaje inteligente para equipos industriales." },
-    { "id": 5, "name": "LiteSense Motion", "brand": "BrightHome", "description": "Sensor de movimiento para luces con eficiencia energética." },
-    { "id": 6, "name": "ThermoPlug Mini", "brand": "HeatGuard", "description": "Enchufe inteligente que mide consumo de energía en tiempo real." },
-    { "id": 7, "name": "EcoVolt Panel", "brand": "EcoVolt", "description": "Panel de control centralizado para dispositivos conectados." },
-    { "id": 8, "name": "ChargeMaster USB", "brand": "TechEase", "description": "Módulo de carga USB con control de energía." },
-    { "id": 9, "name": "PowerStrip Smart6", "brand": "VoltMax", "description": "Regleta con 6 tomas inteligentes monitoreadas por WiFi." },
-    { "id": 10, "name": "SensorTemp Duo", "brand": "ThermIQ", "description": "Sensor dual de temperatura y humedad con historial de datos." }
+  "devices": [
+    {
+      "id": "disp1",
+      "name": "Computer",
+      "voltage": 220.5,
+      "current": 0.45,
+      "power": 99.2,
+      "status": "disconnected"
+    },
+    {
+      "id": "dev2",
+      "name": "Router",
+      "voltage": 221.0,
+      "current": 3.1,
+      "power": 685.1,
+      "status": "disconnected"
+    },
+    {
+      "id": "dev3",
+      "name": "Smart thermostats",
+      "voltage": 219.8,
+      "current": 0.8,
+      "power": 175.8,
+      "status": "connected"
+    },
+    {
+      "id": "dev4",
+      "name": "Lighting systems",
+      "voltage": 220.1,
+      "current": 0.1,
+      "power": 22.0,
+      "status": "connected"
+    }
   ],
-  "CompanyReview": [
-    { "id": 1, "companyName": "ElectroAndes S.A.", "comment": "La plataforma nos ayudó a reducir costos de electricidad notablemente.", "createdAt": "2025-05-10" },
-    { "id": 2, "companyName": "LuzVerde Corp.", "comment": "Muy útil para monitorear el consumo energético de nuestra planta.", "createdAt": "2025-05-11" },
-    { "id": 3, "companyName": "TecnoVolt Perú", "comment": "La aplicación es intuitiva y los reportes son claros y precisos.", "createdAt": "2025-05-12" },
-    { "id": 4, "companyName": "EnergíaEco SAC", "comment": "Gracias a EcoVolt optimizamos nuestros planes de mantenimiento eléctrico.", "createdAt": "2025-05-13" },
-    { "id": 5, "companyName": "RedPower Solutions", "comment": "Una herramienta fundamental para gestionar nuestras operaciones.", "createdAt": "2025-05-14" }
+  "plans": [
+    {
+      "id": 1,
+      "name": "Free",
+      "price": 0,
+      "benefits": [
+        "Monitorización de hasta 3 dispositivos IoT.",
+        "Acceso a promedios históricos básicos (Voltaje, Corriente, Potencia).",
+        "Sugerencias generales de ahorro energético.",
+        "Soporte técnico básico (vía email)."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Básico",
+      "price": 9.99,
+      "benefits": [
+        "Monitorización de hasta 10 dispositivos IoT.",
+        "Acceso a promedios históricos detallados (Voltaje, Corriente, Potencia, Frecuencia, Factor de Potencia).",
+        "Historial de datos de los últimos 3 meses.",
+        "Sugerencias de ahorro energético mejoradas.",
+        "Soporte técnico prioritario (email y chat).",
+        "Control remoto de encendido/apagado de dispositivos."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Premium",
+      "price": 19.99,
+      "benefits": [
+        "Monitorización ilimitada de dispositivos IoT.",
+        "Acceso a todos los promedios históricos y análisis avanzados.",
+        "Historial de datos ilimitado.",
+        "Sugerencias de ahorro energético personalizadas (basadas en patrones de uso).",
+        "Soporte técnico 24/7 (email, chat y teléfono).",
+        "Control remoto avanzado y programación de dispositivos.",
+        "Reportes de consumo energético personalizados.",
+        "Acceso anticipado a nuevas funciones."
+      ]
+    }
   ],
-  "ElectricianReview": [
-    { "id": 1, "electricianName": "Carlos Gutiérrez", "comment": "La aplicación me permite hacer diagnósticos más rápidos y precisos.", "createdAt": "2025-05-10" },
-    { "id": 2, "electricianName": "Lucía Fernández", "comment": "Excelente herramienta para técnicos eléctricos, muy recomendable.", "createdAt": "2025-05-11" },
-    { "id": 3, "electricianName": "Diego Rivas", "comment": "EcoVolt facilita el seguimiento de alertas y mantenimiento preventivo.", "createdAt": "2025-05-12" },
-    { "id": 4, "electricianName": "Ana Salazar", "comment": "Ahora puedo exportar datos y presentarlos directamente al cliente.", "createdAt": "2025-05-13" },
-    { "id": 5, "electricianName": "José Medina", "comment": "Muy útil en campo, ahorro mucho tiempo en instalaciones y revisiones.", "createdAt": "2025-05-14" }
+  "companies": [
+    {
+      "id": "comp1",
+      "name": "TecnoSoluciones S.A.C.",
+      "email": "contacto@tecnosoluciones.com",
+      "planId": 3
+    },
+    {
+      "id": "comp2",
+      "name": "Energía Futura E.I.R.L.",
+      "email": "info@energiafutura.com",
+      "planId": 1
+    },
+    {
+      "id": "comp3",
+      "name": "Innovaciones Eléctricas SAC",
+      "email": "ventas@innovaciones.com",
+      "planId": 2
+    }
+  ],
+  "electricians": [
+    {
+      "id": "elec1",
+      "name": "Juan",
+      "lastName": "Pérez",
+      "code": "elec001",
+      "email": "juan.perez@electricista.com"
+    },
+    {
+      "id": "elec2",
+      "name": "María",
+      "lastName": "González",
+      "code": "elec002",
+      "email": "maria.gonzalez@electricista.com"
+    },
+    {
+      "id": "elec3",
+      "name": "Carlos",
+      "lastName": "Ramírez",
+      "code": "elec003",
+      "email": "carlos.ramirez@electricista.com"
+    }
   ]
 }
